@@ -10,8 +10,8 @@ public class Block {
         this.previousHash = previousHash;
         this.transactions = transactions;
 
-        Object[] contens = {Arrays.hashCode(transactions), previousHash};
-        this.blockHash = Arrays.hashCode(contens);
+        Object[] contents = {Arrays.hashCode(transactions), previousHash};
+        this.blockHash = Arrays.hashCode(contents);
     }
 
     public int getPreviousHash() {
@@ -25,5 +25,4 @@ public class Block {
     public int getBlockHash() {
         return blockHash;
     }
-
 }
