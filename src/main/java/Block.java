@@ -14,11 +14,9 @@ public class Block {
         this.blockHash = Arrays.hashCode(contens);
     }
 
-
     public int getPreviousHash() {
         return previousHash;
     }
-
 
     public String[] getTransaction() {
         return transactions;
@@ -27,4 +25,5 @@ public class Block {
     public int getBlockHash() {
         return blockHash;
     }
+
 }
